@@ -42,6 +42,17 @@
         ul {
             padding: 0;
             list-style: none;
+        
+        
+        li {
+            padding: 0.5em 0.5em;
+        }
+        }
+    }
+    
+    tfoot {
+        td {
+            padding: 0.5em 0;
         }
     }
 }
