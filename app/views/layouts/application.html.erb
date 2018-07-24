@@ -10,6 +10,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="main">
+      <%= image_tag 'Logo.png', alt: 'The Pragmatic bookshelf' %>
+      <h1><%= @page_title %></h1>
+    </header>
+    <section class="content">
+      <nav class="side_nav">
+        <h3><%= Time.now %></h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/questions">Questions</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <main class='<%= controller.controller_name %>'>
+        <%= yield %>
+      </main>
+    </section>
   </body>
 </html>

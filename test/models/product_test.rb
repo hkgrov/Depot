@@ -25,7 +25,7 @@ class ProductTest < ActiveSupport::TestCase
   end
   
   def new_product(image_url)
-    Product.new(title: "Bjarne", description: "A small but very capable pug huggable animal. It might be small, but what it lacks in size it makes up for in pure cuteness", price: 1, image_url: image_url)
+    Product.new(title: "Bjarne plush", description: "A small but very capable and hugable pug plush. It might be small, but what it lacks in size it makes up for in pure cuteness", price: 2, image_url: image_url)
   end
   
   test "Image_url" do
