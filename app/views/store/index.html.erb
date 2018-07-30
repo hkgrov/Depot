@@ -5,6 +5,10 @@
 <h1>The Fluffy Teddybear Store</h1>
 
 <ul class="catalog">
+    <p><% if session[:counter] > 5 %>
+       <%= pluralize(session[:counter], "Time") %>
+       <% end %>
+    </p>
     <% cache @products do %>
         <% @products.each do |product| %>
         <% cache product do %>
