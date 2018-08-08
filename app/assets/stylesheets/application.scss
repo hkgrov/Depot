@@ -25,43 +25,62 @@
     text-align: center;
 }
 
+#cart {
+	article {
+		h2 {
+			margin-top: 0;
+		}
+		background: white;
+		border-radius: 0.5em;
+		margin: 1em;
+		padding: 1.1414em;
+		@media (min-width: 30em) {
+			margin: 0;
+		}
+	}
+}
+
+
 body {
     margin: 0;
     padding: 0;
 }
-header-main {
+header.main {
     text-align: center;
+    
     @media (min-width: 30em) {
         text-align: left;
     }
-    background: #282;
+    background: #005b69;
     margin: 0;
     h1 {
         display: none;
     }
 }
 
+
 .content {
-    img {
-        height: 100px;
-        width: 100px;
-    }
+	img {
+		height: 200px;
+		width: 200px;
+	}
     margin: 0;
     padding: 0;
-    
+
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;
+    ​flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     
     @media (min-widht: 30em) {
         flex-direction: row; 
+	
         -webkit-box-orient: horizontal;
     }
     nav {
         padding-bottom: 1em;
-        background: #141;
+        background: #00363e;
         text-align: center;
         
         @media (min-width: 30em) {

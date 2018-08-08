@@ -1,0 +1,79 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2018-07-31 12:32:49.332480'
+    - '2018-07-31 12:32:49.332480'
+
+---
+carts:
+  columns:
+  - id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - '2018-08-06 19:17:03.603358'
+    - '2018-08-06 19:17:03.603358'
+  - - 4
+    - '2018-08-06 20:37:48.987059'
+    - '2018-08-06 20:37:48.987059'
+
+---
+line_items:
+  columns:
+  - id
+  - product_id
+  - cart_id
+  - created_at
+  - updated_at
+  - quantity
+  - price
+  records: 
+  - - 1
+    - 1
+    - 4
+    - '2018-08-06 20:37:48.998590'
+    - '2018-08-06 20:37:48.998590'
+    - 1
+    - 750
+
+---
+products:
+  columns:
+  - id
+  - title
+  - description
+  - image_url
+  - price
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Fluffy Totoro
+    - This fluffy Totoro from the movie "My Neighbor Totoro" is the only plush you'll
+      ever need. It is filled with the dreams of a million children and radiates an
+      aura of calmness only challenged by Buddhists who have reached nirvana. If you
+      are looking for a plush to quench your thirst for fluffiness look no further!
+    - https://images-na.ssl-images-amazon.com/images/I/41c3mlIDeUL._SY355_.jpg
+    - 750
+    - '2018-08-06 20:05:50.982443'
+    - '2018-08-06 20:05:50.982443'
+  - - 2
+    - It's so fluffy unicorn
+    - The most fluffy unicorn you have held in you hands in your entire life. It's
+      fluffyness makes all your problems melt away and rainbows appear right in front
+      of you. It is said one squish of this unicorn can cure cancer! It makes even
+      the hardest rock soft to the touch. It is better than cocaine, heroin and sugar
+      mixed together and will make you feel more alive than you have ever felt.
+    - http://d13z1xw8270sfc.cloudfront.net/origin/266782/unicornplushlarge.jpg
+    - 999
+    - '2018-08-06 20:06:19.298241'
+    - '2018-08-06 20:06:19.298241'

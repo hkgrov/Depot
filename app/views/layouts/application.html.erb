@@ -3,19 +3,23 @@
   <head>
     <title>Depot</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="main">
-      <%= image_tag 'Logo.png', alt: 'The Pragmatic bookshelf' %>
+      <%= image_tag 'Logo2.png', alt: 'The Pragmatic bookshelf' %>
       <h1><%= @page_title %></h1>
     </header>
     <section class="content">
       <nav class="side_nav">
+	      <% if @cart %>
+	      <div id="cart" class="carts">
+		      <%= render_if @cart && @cart.line_items.any?, @cart %>
+	      </div>
+	      <% end %>
         <h3><%= Time.now %></h3>
         <ul>
           <li><a href="/">Home</a></li>
