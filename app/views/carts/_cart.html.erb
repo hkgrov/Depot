@@ -13,5 +13,9 @@
 			</tr>
 		</tfoot>
 	</table>
-	<%= button_to 'Empty cart', cart, method: :delete, data: {confirm: 'Are you sure?' }%>
+	<%= button_to 'Empty cart', cart, method: :delete, data: {confirm: 'Are you sure?' }, remote: true %>
+	
+	<% unless controller_name == 'orders' && action_name == 'new' %>
+		<%= button_to 'checkout', new_order_path, method: :get, class: "checkout" %>
+	<% end %>
 </article>

@@ -10,4 +10,5 @@
 	</td>
 	<td><%= line_item.product.title %></td>
 	<td class="price"><%= number_to_currency(line_item.total_price) %></td>
+	<td class="remove-item"><%= button_to 'Remove Item', line_item, method: :delete %>
 </tr>
